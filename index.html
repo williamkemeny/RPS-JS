@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>RPS</title>
+  </head>
+  <body>
+    <div class="app">
+      <header><h1>Rock-Paper-Scissors</h1></header>
+      <h2>Score</h2>
+      <section class="score">
+        <div class="playerScore">
+          <h3>
+            Player Score:
+            <h3 id="pScore">0</h3>
+          </h3>
+          <div class="action">
+            <h3 id="pAction">Action</h3>
+          </div>
+        </div>
+        <div class="computerScore">
+          <h3>
+            Computer Score:
+            <h3 id="cScore">0</h3>
+          </h3>
+          <div class="action">
+            <h3 id="cAction">Action</h3>
+          </div>
+        </div>
+      </section>
+      <h3 class="text" id="roundText">Who will win?</h3>
+      <div class="buttons">
+        <button class="button-62" onclick="changeChoice('Rock')">Rock</button>
+        <button class="button-62" onclick="changeChoice('Paper')">Paper</button>
+        <button class="button-62" onclick="changeChoice('Scissors')">
+          Scissors
+        </button>
+      </div>
+      <button class="button-62 bottom" onclick="reset()">Reset</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
